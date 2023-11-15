@@ -1,0 +1,2 @@
+- Això són els meus [apuns de curriculum](<ANDREU MARTORELL SERRA Curriculum.pdf>)
+- Fes [clic aqui](../README.md) per tornar a la pagina principal
