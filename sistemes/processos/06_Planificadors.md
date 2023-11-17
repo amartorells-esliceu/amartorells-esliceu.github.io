@@ -19,11 +19,11 @@ Suposem que tenim tres processos en aquest ordre a la cua: P1, P2 i P3. Si arrib
 3. **Temps 15:**
    - P2 finalitza i P3 comença a executar-se.
 ### Limitacions:
-- #### **Problema de "Injustícia":**
+- **Problema de "Injustícia":**
   - El principal inconvenient de FIFO és que no té en compte la durada dels processos. Això pot portar a situacions on processos més curts han de esperar innecessàriament a causa de processos més llargs.
-- #### **No Óptim en Temps d'Espera:**
+- **No Óptim en Temps d'Espera:**
   - Els temps d'espera poden ser elevats, especialment per a processos curts en presència de processos llargs.
-- #### **No Dinàmic:**
+- **No Dinàmic:**
 ## Round Robin:
 L'algoritme de planificació Round Robin és una millora del FIFO que aborda el problema d'"injustícia". Cada procés rep un interval de temps de CPU conegut com a "quantum", i s'executa durant aquest temps. Si no ha finalitzat, es mou al final de la cua, permetent als altres processos ser executats. Aquest model de planificació és àgil, però pot provocar una sobrecàrrega de canvis de context.
 ### Característiques destacades:
@@ -46,9 +46,9 @@ Suposem tres processos (P1, P2 i P3) amb "quants" de temps de CPU de 8 unitats. 
 4. **Temps 24-32:**
    - P1 executa 8 unitats, i així successivament.
 ### Limitacions:
-- #### **Sobrecàrrega de Canvis de Context:**
+- **Sobrecàrrega de Canvis de Context:**
   - "Quants" petits poden provocar una sobrecàrrega en els canvis de context, ja que els processos es commuten amb freqüència.
-- #### **No Óptim per Temps d'Espera:**
+- **No Óptim per Temps d'Espera:**
   - Encara pot generar temps d'espera significatius per a processos curts si hi ha molts processos llargs a la cua.
 ## SJF (Shortest Job First):
 L'algoritme de planificació SJF (Shortest Job First) busca minimitzar el temps d'espera prioritzant els processos amb la durada més curta. Tot i les seves avantatges, la seva implementació pràctica pot ser desafiadora a causa de la necessitat de predir la durada dels processos amb antelació.
@@ -66,9 +66,9 @@ Suposem tres processos (P1, P2 i P3) amb temps d'execució de 6, 8 i 4 unitats, 
 3. **Temps 12-20:**
    - P2 executa 8 unitats.
 ### Limitacions:
-- #### **Problemes de Predicció:**
+- **Problemes de Predicció:**
   - La predicció precisa de la durada dels processos és crucial per a l'eficàcia de SJF.
-- #### **Potenciales Temps d'Espera Elevats:**
+- **Potenciales Temps d'Espera Elevats:**
   - Si un procés més llarg arriba abans que un més curt, aquest últim haurà d'esperar fins que finalitzi el procés llarg.
 ## SRT (Shortest Remaining Time):
 SRT (Shortest Remaining Time) és una variant dinàmica de SJF, on la CPU pot ser canviada a un nou procés si aquest té un temps d'execució més curt que el procés en execució actual. Aquesta característica dinàmica pot reduir encara més els temps d'espera.
@@ -86,15 +86,15 @@ Suposem dos processos (P1 i P2) amb temps d'execució de 6 i 8 unitats, respecti
 3. **Temps 8-16:**
    - P2 executa 8 unitats.
 ### Limitacions:
-- #### **Canvis de Context Addicionals:**
+- **Canvis de Context Addicionals:**
   - La dinàmica de canvis en el procés actual pot provocar canvis de context addicionals, que podrien afectar el rendiment en certes situacions.
-- #### *Complexitat de Implementació:**
+- **Complexitat de Implementació:**
   - La implementació de SRT pot ser més complexa que altres algoritmes a causa de la necessitat de supervisar els temps d'execució restants de manera dinàmica.
 
 - Això és la [intruduccio](01_Introduccio.md)
-- Això son els meus apunts de [gestió de sistemes](<02_Gestió del Sistema Operatiu.md>)
-- Això son els meus apunts de [execució de processos](<03_Execució de Processos.md>)
-- Això son els meus apunts de [operacions amb processos](<04_Operacions amb Processos.md>)
-- Això son els meus apunts de [estats d'un procés](<05_Estats d'un Procés.md>)
+- Això son els meus apunts de [gestió de sistemes](<02_Gestio_del Sistema_Operatiu.md>)
+- Això son els meus apunts de [execució de processos](03_Execucio_de_Processos.md)
+- Això son els meus apunts de [operacions amb processos](04_Operacions_amb_Processos.md)
+- Això son els meus apunts de [estats d'un procés](05_Estats_del_Proces.md)
 
 - Gràcies per haver llegit els meus apunts, fes [clic aqui](.) per tornar a la carpeta de processos
