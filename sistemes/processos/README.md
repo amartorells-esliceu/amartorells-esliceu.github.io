@@ -5,4 +5,4 @@
 - Això son els meus apunts de [estats d'un procés](05_Estats_del_Proces.md)
 - Això son els meus apunts de [planificadors](06_Planificadors.md)
 
-Fes[clic aqui](..) per tornar a la carpeta de sistemes
+Fes [clic aqui](..) per tornar a la carpeta de sistemes
